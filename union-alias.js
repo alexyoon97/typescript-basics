@@ -1,6 +1,8 @@
+"use strict";
 //Union Function
-function combi(input1, input2, resultConversion) {
-    var result;
+function combi(input1, input2, resultConversion //literal type
+) {
+    let result;
     if (typeof input1 === "number" && typeof input2 === "number" || resultConversion === 'as-number') {
         result = +input1 + +input2;
     }
@@ -15,7 +17,6 @@ function combi(input1, input2, resultConversion) {
     //       return result.toString()
     //   }
 }
-var combiedAges = combi(30, 26, "as-number");
-var combiedStringAges = combi('30', '26', "as-number");
-var combinedNames = combi("Max", " Anna", "as-text");
-//Literal types
+const combiedAges = combi(30, 26, "as-number");
+const combiedStringAges = combi('30', '26', "as-number");
+const combinedNames = combi("Max", " Anna", "as-text");
